@@ -35,3 +35,22 @@ function operate(a, b, operator){
         return divide(a, b);
     }
 }
+
+// let container = document.querySelector('.container');
+// container.style.maxWidth = '700px';
+// container.style.display = 'flex';
+// container.style.flexWrap = 'wrap';
+
+// // Create a grid for the calculator 
+// for (let i = 0; i < 16; i++){
+//     const calculator = document.createElement('div');
+//     // Properties
+//     calculator.style.display = 'flex';
+//     calculator.style.flex = '1 1 25%';
+//     calculator.style.height = '50px';
+//     calculator.style.outline = '1px solid black';
+
+
+//     container.appendChild(calculator);
+    
+// }

@@ -1,0 +1,17 @@
+.calculator {
+    max-height: 960px;
+    outline: 0.5px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.calculator > *{
+    height: 50px;
+    outline: 0.3px solid red;
+    flex: 1 1 25%;
+    text-align: center;
+    
+}
