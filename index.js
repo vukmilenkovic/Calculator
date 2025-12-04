@@ -36,6 +36,22 @@ function operate(a, b, operator){
     }
 }
 
+const calculator = document.querySelector('.calculator');
+let display = document.querySelector('.display');
+
+// Function display digit
+function displayDigit(){
+    let number;
+    calculator.addEventListener('click', (e) => {
+        number = e.target.textContent;
+        display.textContent = number;
+        return number;
+    })
+    
+}
+
+displayDigit();
+
 // let container = document.querySelector('.container');
 // container.style.maxWidth = '700px';
 // container.style.display = 'flex';
