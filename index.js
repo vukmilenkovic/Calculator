@@ -44,8 +44,10 @@ let display = document.querySelector('.display');
 function displayDigit(){
     let number;
     calculator.addEventListener('click', (e) => {
+        // TODO: concatinate numbers together and don't erase them every time a number is clicked 
         const value = e.target.textContent;
         if (operators.includes(value)){
+            // TODO: get second num
             display.textContent = '';
             return value;
         } else {
@@ -53,6 +55,9 @@ function displayDigit(){
             display.textContent = number;
             return number;
         }
+
+        // TODO: call the opearate function when the user clicks equals 
+
         
     })
     
