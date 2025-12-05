@@ -19,6 +19,7 @@ function divide(a, b){
 let a;
 let b;
 let operator;
+const operators = ['+', '-', '*', '=', '/'];
 
 // Function operator
 function operate(a, b, operator){
@@ -43,12 +44,29 @@ let display = document.querySelector('.display');
 function displayDigit(){
     let number;
     calculator.addEventListener('click', (e) => {
-        number = e.target.textContent;
-        display.textContent = number;
-        return number;
+        const value = e.target.textContent;
+        if (operators.includes(value)){
+            display.textContent = '';
+            return value;
+        } else {
+            number = value;
+            display.textContent = number;
+            return number;
+        }
+        
     })
     
 }
+
+function calculate(){
+    // Reset the display when a symbol is clicked
+    calculator.addEventListener('click', (e) => {
+        
+    })
+    
+}
+
+
 
 displayDigit();
 

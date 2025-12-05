@@ -1,5 +1,14 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .calculator {
+    height: 500px;
     max-height: 960px;
+    max-width: 720px;
+    min-width: 480px;
     outline: 0.5px solid black;
     display: flex;
     flex-direction: row;
@@ -9,7 +18,7 @@
 }
 
 .calculator > *{
-    height: 50px;
+
     outline: 0.3px solid red;
     flex: 1 1 25%;
     text-align: center;
